@@ -3,9 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Product(models.Model):
-	name = models.CharField(max_length = 250,primary_key = True)
+	name = models.CharField(max_length = 250)
 	cost = models.IntegerField()
-	id = models.IntegerField()
 	class Meta:
 		db_table = "product"
 
